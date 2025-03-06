@@ -55,7 +55,7 @@ namespace BookManagementAPI.Controllers
 
             if(!resultValidation.IsValid)
             {
-                return BadRequest();
+                return BadRequest(resultValidation.Errors);
             }
 
             var newBook = new Book()
@@ -82,7 +82,7 @@ namespace BookManagementAPI.Controllers
 
             if(!resultValidation.IsValid)
             {
-                return BadRequest();
+                return BadRequest(resultValidation.Errors);
             }
 
             var updateBook = await _service.GetBookByIdAsync(id);
