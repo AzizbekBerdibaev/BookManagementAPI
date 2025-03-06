@@ -1,0 +1,91 @@
+[
+  {
+    "ContainingType": "BookManagementAPI.Controllers.BooksController",
+    "Method": "GetBooksAsync",
+    "RelativePath": "api/Books/books",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookManagementAPI.Controllers.BooksController",
+    "Method": "GetBookByIdAsync",
+    "RelativePath": "api/Books/books/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookManagementAPI.Controllers.BooksController",
+    "Method": "DeleteBookAsync",
+    "RelativePath": "api/Books/books/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookManagementAPI.Controllers.BooksController",
+    "Method": "CreateBookAsync",
+    "RelativePath": "api/Books/create-book",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createBookDto",
+        "Type": "BookManagementAPI.Dtos.CreateBookDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookManagementAPI.Controllers.BooksController",
+    "Method": "UpdateBookAsync",
+    "RelativePath": "api/Books/update-book/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "updateBookDto",
+        "Type": "BookManagementAPI.Dtos.UpdateBookDto",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
